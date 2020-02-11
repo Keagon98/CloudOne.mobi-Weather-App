@@ -74,7 +74,7 @@ body {
 .search-cond {
     display: flex;
     flex-direction: column;
-    margin-top: -40%;
+    margin-top: 0%;
     margin-left: -4em;
 }
 
@@ -231,6 +231,10 @@ body {
     display: flex;
 }
 
+.card-section-3 {
+    display: flex;
+}
+
 
 .card-body p {
     display: flex;
@@ -241,7 +245,7 @@ body {
 
 .current-day {
     margin-top: -1em;
-    font-size: 1em;
+    font-size: 2em;
     color: #d4a816;
     font-weight: 700;
 }
@@ -249,15 +253,16 @@ body {
 .day {
     margin-top: -1em;
     font-size: .8em;
-    color: #506af0;
-    font-weight: 400;
+    letter-spacing: 1px;
+    color: #7185ee;
+    font-weight: 700;
 }
 
 .secondary-card {
     padding: 2em 1.5em;
     margin: .5em;
     border-radius: 3px;
-    background: linear-gradient(145deg, #201740, #271b4c);
+    background: linear-gradient(145deg, #201740, #372862c4);
     box-shadow:  5px 5px 10px #1f153c, 
                 -5px -5px 5px #291d52;
 }

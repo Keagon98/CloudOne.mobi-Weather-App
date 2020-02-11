@@ -6,7 +6,7 @@ function weatherForecast() {
     function getUserCity() {
         const searchButtonEl = document.getElementById('cityButton');
         console.log(searchButtonEl);
-        // const cityInputEl = document.getElementById('search');
+        
         searchButtonEl.addEventListener('click', function () {
             event.preventDefault();
             userCity = document.getElementById('city').value;
@@ -102,8 +102,7 @@ function weatherForecast() {
                 document.getElementById("temp0-min").innerHTML = "min: " + response.data.list[0].main.temp_min + " °C";
                 document.getElementById("humidity0").innerHTML = "Humidity: " + response.data.list[0].main.humidity + "%";
                 document.getElementById("description0").innerHTML = "Description: " + response.data.list[0].weather[0].description;
-                document.getElementById("icon0").innerHTML = ": " + response.data.list[0].weather[0].description;
-
+                document.getElementById("wind").innerHTML = "Wind Speed: " + response.data.list[0].wind.speed + " kn";
             })
         axios.get(oneDayWeatherURL)
             .then(function (response) {
@@ -140,6 +139,16 @@ function weatherForecast() {
                 document.getElementById("temp4").innerHTML = "Temperature: " + response.data.list[30].main.temp + " °C";
                 document.getElementById("date4").innerHTML = "Date: " + response.data.list[30].dt_txt;
                 document.getElementById("humidity4").innerHTML = "Humidity: " + response.data.list[30].main.humidity + "%";
+
+
+
+            })
+
+            axios.get(oneDayWeatherURL)
+            .then(function (response) {
+                document.getElementById("temp5").innerHTML = "Temperature: " + response.data.list[35].main.temp + " °C";
+                document.getElementById("date5").innerHTML = "Date: " + response.data.list[35].dt_txt;
+                document.getElementById("humidity5").innerHTML = "Humidity: " + response.data.list[35].main.humidity + "%";
 
 
 
