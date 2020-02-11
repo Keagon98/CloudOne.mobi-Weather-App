@@ -45,7 +45,7 @@ body {
     display: flex;
     justify-content: center;
     border-radius: 0 15px 0 15px;
-    background: linear-gradient(145deg, #201740, #271b4c);
+    background: linear-gradient(145deg, #201740, #372862c4);
     box-shadow:  5px 5px 12px #110c22;
     padding: 2em;
     margin: 1em;
@@ -82,7 +82,7 @@ body {
     padding: 1em 2em;
     margin: 1em 1em;
     border-radius: 0 15px 0 15px;
-    background: linear-gradient(145deg, #201740, #271b4c);
+    background: linear-gradient(145deg, #201740, #372862c4);
     box-shadow:  5px 5px 8px #110c22;
     animation: fadeInAnimation ease-in 5s; 
     animation-iteration-count: 1; 
@@ -153,7 +153,7 @@ body {
     padding: 1em 2em;
     margin: 2em 1em;
     border-radius: 0 25px 0 25px;
-    background: linear-gradient(145deg, #201740, #271b4c);
+    background: linear-gradient(145deg, #201740, #372862c4);
     box-shadow:  5px 5px 8px #110c22; 
     animation: fadeInAnimation ease-in 5s; 
     animation-iteration-count: 1; 
@@ -196,7 +196,7 @@ body {
     padding: 2em;
     margin: 3em 5em;
     border-radius: 0 15px 0 15px;
-    background: linear-gradient(145deg, #201740, #271b4c);
+    background: linear-gradient(145deg, #201740, #372862c4);
     box-shadow:  5px 5px 12px #110c22;
     animation: fadeInAnimation ease-in 5s; 
     animation-iteration-count: 1; 
