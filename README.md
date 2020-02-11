@@ -11,4 +11,8 @@ A simple weather app that was built using Vanilla JavaScript and the Openweather
 
 - Openweathermap api
 
+## Author
+
+> Keagon Brinkhuis
+
 Link to view live demo: [Click Here](https://keagon98.github.io/CloudOne.mobi-Weather-App.io/).
