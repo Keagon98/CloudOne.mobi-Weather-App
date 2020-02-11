@@ -25,9 +25,9 @@ body {
 }
 
 .nav-header {
-    color: #795ecf;
-    letter-spacing: 2px;
-    font-size: 2em;
+    color: #ffffffa0;
+    letter-spacing: 5px;
+    font-size: 2.2em;
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -240,13 +240,18 @@ body {
                 -5px -5px 5px #291d52;
 }
 
+ img {
+    margin: 4em 1em;
+    height: 100px;
+}
+
 #today {
     padding: 3em 2.5em;
     margin: .5em;
     border-radius: 3px;
-    background: linear-gradient(145deg, #191722, #161222);
+    background: linear-gradient(145deg, #191722, #161222e0);
     box-shadow:  5px 5px 10px #1b152a, 
-                -5px -5px 10px #231b3b;
+                -5px -5px 10px #32197c76;
 }
 
 
