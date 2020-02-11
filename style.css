@@ -1,33 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
 
-/**************************
-
-Mobile View 
-
-**************************/
-
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-    body {
-        overflow: hidden;
-    }
-
-    .content {
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-}
-
-
-
-
 * {
     outline: none;
 }
