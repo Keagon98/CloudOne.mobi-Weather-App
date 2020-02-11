@@ -84,6 +84,23 @@ body {
     border-radius: 0 15px 0 15px;
     background: linear-gradient(145deg, #201740, #271b4c);
     box-shadow:  5px 5px 8px #110c22;
+    animation: fadeInAnimation ease-in 5s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+} 
+
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    }
+    
+    50% {
+        opacity: 1;
+    }
+
+    100% { 
+        opacity: 5; 
+    } 
 }
 
 .search-box p {
@@ -137,8 +154,25 @@ body {
     border-radius: 0 25px 0 25px;
     background: linear-gradient(145deg, #201740, #271b4c);
     box-shadow:  5px 5px 8px #110c22; 
-                
+    animation: fadeInAnimation ease-in 5s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+} 
+
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
     }
+    
+    50% {
+        opacity: 1;
+    }
+
+    100% { 
+        opacity: 5; 
+    } 
+}          
+    
 
 .card-header {
     color: #fdfbffa8;
@@ -163,7 +197,25 @@ body {
     border-radius: 0 15px 0 15px;
     background: linear-gradient(145deg, #201740, #271b4c);
     box-shadow:  5px 5px 12px #110c22;
+    animation: fadeInAnimation ease-in 5s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+} 
+
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    }
+    
+    50% {
+        opacity: 1;
+    }
+
+    100% { 
+        opacity: 5; 
+    } 
 }
+
 
 .card-container {
     display: flex;
