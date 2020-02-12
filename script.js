@@ -66,7 +66,7 @@ function weatherForecast() {
                 document.getElementById("name").innerHTML = response.data.name;
                 document.getElementById("temp").innerHTML = "Temperature: " + response.data.main.temp + " °C";
                 document.getElementById("humidity").innerHTML = "Humidity: " + response.data.main.humidity + "%";
-                document.getElementById("wind").innerHTML = "Wind Speed: " + response.data.wind.speed + " kph";
+                document.getElementById("wind").innerHTML = "Wind Speed: " + response.data.wind.speed + " meter/sec";
 
             })
     };
@@ -97,12 +97,13 @@ function weatherForecast() {
         axios.get(oneDayWeatherURL)
             .then(function (response) {
                 console.log(response.data.list[0])
+                document.getElementById("weather-icon0").innerHTML = " <img src='http://openweathermap.org/img/wn/" + response.data.list[0].weather[0].icon + ".png'>";
                 document.getElementById("date0").innerHTML = "Date: " + response.data.list[0].dt_txt;
                 document.getElementById("temp0-max").innerHTML = "max: " + response.data.list[0].main.temp_max + " °C";
                 document.getElementById("temp0-min").innerHTML = "min: " + response.data.list[0].main.temp_min + " °C";
                 document.getElementById("humidity0").innerHTML = "Humidity: " + response.data.list[0].main.humidity + "%";
                 document.getElementById("description0").innerHTML = "Description: " + response.data.list[0].weather[0].description;
-                document.getElementById("wind").innerHTML = "Wind Speed: " + response.data.list[0].wind.speed + " kn";
+                document.getElementById("wind").innerHTML = "Wind Speed: " + response.data.list[0].wind.speed + " meter/sec";
             })
         axios.get(oneDayWeatherURL)
             .then(function (response) {
@@ -116,9 +117,9 @@ function weatherForecast() {
             })
         axios.get(oneDayWeatherURL)
             .then(function (response) {
-                document.getElementById("temp2").innerHTML = "Temperature: " + response.data.list[12].main.temp + " °C";
-                document.getElementById("date2").innerHTML = "Date: " + response.data.list[12].dt_txt;
-                document.getElementById("humidity2").innerHTML = "Humidity: " + response.data.list[12].main.humidity + "%";
+                document.getElementById("temp2").innerHTML = "Temperature: " + response.data.list[20].main.temp + " °C";
+                document.getElementById("date2").innerHTML = "Date: " + response.data.list[20].dt_txt;
+                document.getElementById("humidity2").innerHTML = "Humidity: " + response.data.list[20].main.humidity + "%";
 
 
 
@@ -146,9 +147,9 @@ function weatherForecast() {
 
             axios.get(oneDayWeatherURL)
             .then(function (response) {
-                document.getElementById("temp5").innerHTML = "Temperature: " + response.data.list[35].main.temp + " °C";
-                document.getElementById("date5").innerHTML = "Date: " + response.data.list[35].dt_txt;
-                document.getElementById("humidity5").innerHTML = "Humidity: " + response.data.list[35].main.humidity + "%";
+                document.getElementById("temp5").innerHTML = "Temperature: " + response.data.list[38].main.temp + " °C";
+                document.getElementById("date5").innerHTML = "Date: " + response.data.list[38].dt_txt;
+                document.getElementById("humidity5").innerHTML = "Humidity: " + response.data.list[38].main.humidity + "%";
 
 
 
