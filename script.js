@@ -6,7 +6,7 @@ function weatherForecast() {
     function getUserCity() {
         const searchButtonEl = document.getElementById('cityButton');
         console.log(searchButtonEl);
-        
+
         searchButtonEl.addEventListener('click', function () {
             event.preventDefault();
             userCity = document.getElementById('city').value;
@@ -35,7 +35,7 @@ function weatherForecast() {
 
     storeInLocalStorage();
 
-    function displayLocalStorage() { 
+    function displayLocalStorage() {
 
         var history = "";
         if (localStorage.getItem("history") !== "") {
@@ -145,7 +145,7 @@ function weatherForecast() {
 
             })
 
-            axios.get(oneDayWeatherURL)
+        axios.get(oneDayWeatherURL)
             .then(function (response) {
                 document.getElementById("temp5").innerHTML = "Temperature: " + response.data.list[38].main.temp + " °C";
                 document.getElementById("date5").innerHTML = "Date: " + response.data.list[38].dt_txt;

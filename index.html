@@ -1,127 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Weather Application</title>
-    <script src="https://kit.fontawesome.com/a255ceb981.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="sun.png">
-</head>
+    <script
+      src="https://kit.fontawesome.com/a255ceb981.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="sun.png" />
+  </head>
 
-<body>
-   
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <body>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+    ></script>
     <nav class="nav-wrapper">
-        <span class="nav-header">Weather Daily<i class="fas fa-cloud-sun-rain"></i></span>
+      <span class="nav-header"
+        >Weather Daily<i class="fas fa-cloud-sun-rain"></i
+      ></span>
     </nav>
     <div class="container">
-        <div class="content"> 
-            <div class="search-cond">
-            <div class="search-box">
-                <p>Search for a City:</p>
-                <div class="search-input">
-                    <input type="search" id="city" autocomplete="off" required>
-                    <div class="input-button">
-                        <button class="search-button" type="button" id="cityButton"><i class="fas fa-search fa-2x"></i></button>
-                    </div>
-                </div>
+      <div class="content">
+        <div class="search-cond">
+          <div class="search-box">
+            <p>Search for a City:</p>
+            <div class="search-input">
+              <input type="search" id="city" autocomplete="off" required />
+              <div class="input-button">
+                <button class="search-button" type="button" id="cityButton">
+                  <i class="fas fa-search fa-2x"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="weather-cond-card">
+            <div class="card-header" id="display">
+              <h3>Current Weather Conditions</h3>
             </div>
 
-
-                <div class="weather-cond-card">
-                    <div class="card-header" id="display"><h3>Current Weather Conditions</h3></div>
-                        
-                    <div class="card-content" id="today">
-                        <h2 class="current-day">Today</h2>
-                        <p class="card-text" id=weather-icon0></p>
-                        <p class="card-text" id=date0>Date</p>
-                        <p class="card-text"id=temp0-max>Temp-max</p>
-                        <p class="card-text"id=temp0-min>Temp-min</p>
-                        <p class="card-text"id=humidity0>Humidity</p>
-                        <p class="card-text"id=description0>Description</p>
-                        <p class="card-text" id="wind">Wind Speed</p>
-                        <p class="card-text" id="lat">Latitude</p>
-                        <p class="card-text" id="lon">Longitude</p>
-
-                    </div>
-                </div>
+            <div class="card-content" id="today">
+              <h2 class="current-day">Today</h2>
+              <p class="card-text" id="weather-icon0"></p>
+              <p class="card-text" id="date0">Date</p>
+              <p class="card-text" id="temp0-max">Temp-max</p>
+              <p class="card-text" id="temp0-min">Temp-min</p>
+              <p class="card-text" id="humidity0">Humidity</p>
+              <p class="card-text" id="description0">Description</p>
+              <p class="card-text" id="wind">Wind Speed</p>
+              <p class="card-text" id="lat">Latitude</p>
+              <p class="card-text" id="lon">Longitude</p>
             </div>
-                    <div class="container-forecast">
-                        <h1 class="display-5">5-Day Forecast</h1>
-                        <div class="card-container">
-                            <div class="card-section-1">
-                                <div class="secondary-card">
-                                    <div class="card-body">
-                                        <h2 class="day">Tomorrow</h2>
-                                        <p class="card-text" id=date1>Date</p>
-                                        <p class="card-text"id=temp1>Temp-</p>
-                                        <p class="card-text"id=humidity1>Humidity</p>
-                                    </div>
-                                </div>
-                            
-                                <div class="secondary-card">
-                                    <div class="card-body">
-                                       <h2 class="day">Day 2</h2>
-                                       <p class="card-text" id=date2>Date</p>
-                                        <p class="card-text"id=temp2>Temp</p>
-                                        <p class="card-text"id=humidity2>Humidity</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-section-2">
-                                <div class="secondary-card">
-                                    <div class="card-body">
-                                        <h2 class="day">Day 3</h2>
-                                        <p class="card-text" id=date3>Date</p>
-                                        <p class="card-text" id=temp3>Temp</p>
-                                        <p class="card-text" id=humidity3>Humidity</p>
-                                    </div>
-                                </div>
-                            
-                                <div class="secondary-card">
-                                    <div class="card-body">
-                                        <h2 class="day">Day 4</h2>
-                                        <p class="card-text" id=date4>Date</p>
-                                        <p class="card-text" id=temp4>Temp</p>
-                                        <p class="card-text" id=humidity4>Humidity</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-section-3">
-                                <div class="secondary-card">
-                                    <div class="card-body">
-                                        <h2 class="day">Day 5</h2>
-                                        <p class="card-text" id=date5>Date</p>
-                                        <p class="card-text" id=temp5>Temp</p>
-                                        <p class="card-text" id=humidity5>Humidity</p>
-                                    </div>
-                                </div>
-                                    <img src="hot.png" alt="heat">
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="container-forecast">
+          <h1 class="display-5">5-Day Forecast</h1>
+          <div class="card-container">
+            <div class="card-section-1">
+              <div class="secondary-card">
+                <div class="card-body">
+                  <h2 class="day">Tomorrow</h2>
+                  <p class="card-text" id="date1">Date</p>
+                  <p class="card-text" id="temp1">Temp-</p>
+                  <p class="card-text" id="humidity1">Humidity</p>
+                </div>
+              </div>
+
+              <div class="secondary-card">
+                <div class="card-body">
+                  <h2 class="day">Day 2</h2>
+                  <p class="card-text" id="date2">Date</p>
+                  <p class="card-text" id="temp2">Temp</p>
+                  <p class="card-text" id="humidity2">Humidity</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-section-2">
+              <div class="secondary-card">
+                <div class="card-body">
+                  <h2 class="day">Day 3</h2>
+                  <p class="card-text" id="date3">Date</p>
+                  <p class="card-text" id="temp3">Temp</p>
+                  <p class="card-text" id="humidity3">Humidity</p>
+                </div>
+              </div>
+
+              <div class="secondary-card">
+                <div class="card-body">
+                  <h2 class="day">Day 4</h2>
+                  <p class="card-text" id="date4">Date</p>
+                  <p class="card-text" id="temp4">Temp</p>
+                  <p class="card-text" id="humidity4">Humidity</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-section-3">
+              <div class="secondary-card">
+                <div class="card-body">
+                  <h2 class="day">Day 5</h2>
+                  <p class="card-text" id="date5">Date</p>
+                  <p class="card-text" id="temp5">Temp</p>
+                  <p class="card-text" id="humidity5">Humidity</p>
+                </div>
+              </div>
+              <img src="hot.png" alt="heat" />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    </div>
-
-
-
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-   
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
 
-    
-  
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
