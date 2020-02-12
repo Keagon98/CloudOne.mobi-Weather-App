@@ -237,6 +237,7 @@ body {
     font-weight: 700;
 }
 
+
 .secondary-card {
     padding: 2em 1.5em;
     margin: .5em;
@@ -245,6 +246,7 @@ body {
     box-shadow:  5px 5px 10px #1f153c, 
                 -5px -5px 5px #291d52;
 }
+
 
  img {
     margin: 4em 1em;
