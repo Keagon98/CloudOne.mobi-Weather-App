@@ -117,9 +117,9 @@ function weatherForecast() {
             })
         axios.get(oneDayWeatherURL)
             .then(function (response) {
-                document.getElementById("temp2").innerHTML = "Max-temp: " + response.data.list[20].main.temp + " °C";
-                document.getElementById("date2").innerHTML = "Date: " + response.data.list[20].dt_txt;
-                document.getElementById("humidity2").innerHTML = "Humidity: " + response.data.list[20].main.humidity + "%";
+                document.getElementById("temp2").innerHTML = "Max-temp: " + response.data.list[16].main.temp + " °C";
+                document.getElementById("date2").innerHTML = "Date: " + response.data.list[16].dt_txt;
+                document.getElementById("humidity2").innerHTML = "Humidity: " + response.data.list[16].main.humidity + "%";
 
 
 
